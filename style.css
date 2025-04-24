@@ -186,18 +186,24 @@ body {
     transition: .4s;
 }
 
-.gallery__card:hover {
+/* .gallery__card:hover {
     transform: scale(1.08);
     z-index: 1;
-}
+} */
 
 .gallery__photo {
     width: 100%;
     border-radius: 16px;
     object-fit: cover;
+
+    filter:blur(4px);
+
+    transition: .4s;
 }
 
-
+.gallery__photo:hover {
+    filter: none;
+}
 
 
 .second::after,
